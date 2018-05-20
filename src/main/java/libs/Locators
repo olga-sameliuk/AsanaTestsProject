@@ -1,0 +1,27 @@
+MainPage
+https://app.asana.com/0/dashboard/661707260041680
+
+MainPage.Button.AddProject=xpath(".//*[@class='CircularButton CircularButton--enabled CircularButton--xxsmall CircularButton--circular SidebarTeamDetailsProjectsList-addProjectButton']")
+MainPage.ProjectName.Input=xpath(".//input[@id='new_project_dialog_content_name_input']")
+MainPage.Description.Button=xpath(".//*[text()='Description']")
+MainPage.Description.Input=xpath(".//*[@class='quill-container']//div[1]")
+MainPage.Layout.BoardRadioButton=xpath(".//input[@class='NewProjectForm-boardRadio']")
+MainPage.Create.Button=xpath(".//*[@class='Button Button--disabled Button--medium Button--primary CreateBlankProjectRow-button NewProjectForm-createButton']")
+
+MainPage.WorkProject.Button=xpath(".//*[@title="Work Project"]")
+
+MainPage.AddButtonPlus.Button=(".//*[@class='CardButton BoardAddCardButton BoardColumnCardsContainer-addCardButton']")
+MainPage.TextArea.Input=(".//*[@class='simpleTextarea autogrowTextarea-input']")
+MainPage.AddColumns.Button=xpath(".//*[@class='Button Button--medium Button--primary BoardWelcomeBanner-button']")
+MainPage.ColumnText.Input=xpath(".//*[@class='textInput textInput--medium BoardColumnNameInput-input BoardNewColumnForm-input']")
+
+MainPage.ShowProjectDescriptionLink.Button=xpath(".//*[@class='BoardBody-descriptionLink']")
+
+MainPage.ProjectDD.DDButton=xpath(".//*[@class='PageHeaderStructure-titleRightElement']")
+
+MainPage.DeleteProject.DDOption=xpath(".//*[@class='menuItem-button is-highlighted menuItem--small
+ProjectDropdownMenuButton-deleteProjectButton']")
+
+MainPage.Description.Board=xpath(".//*[@class='ProjectOverviewSection-header']")
+
+MainPage.Confirm.Button=xpath(".//*[@id='confirm']")

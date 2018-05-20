@@ -1,0 +1,77 @@
+
+
+        Test Case 1
+
+        Summary:  На главной странице проверить функцию добавления нового проекта типа BOARD в список проектов
+                  на боковой панели меню.
+        Precondition: 	Зайти на страницу  https://app.asana.com/-/login  и авторизоваться под
+                  логином  lunopark123@ukr.net, и паролем Lunopark123 и осуществить выход на главную
+                  страницу  https://app.asana.com/0/dashboard/661707260041680
+        Steps:
+        1. Кликнуть на крулую кнопочку с плсиком справа от клавиши  PROJECTS на боковой панели меню
+            чтобы открылась анкета "New Project".
+        2. В текстовое поле Project Name ввести текст, например, «Work Project» .
+        3. Кликнуть на кнопку Description чтобы открылось поле ввода для описания.
+        4. В текстовое поле Description  ввести текст, например, «Work at automation tests» .
+        5. Переключатель LAYOUT изменить с "List" на "Board" .
+        6. Нажать на кнопку «Create Progect»
+
+        Expected result:
+                Анкета "New Project" закрывается и под клавишей PROJECTS появляется клавиша
+                «Work Project».
+
+
+        Test Case2
+
+        Summary:  Проверить функцию добавления колонки в новый проект «Work Project».
+        Precondition: 	Зайти на страницу  https://app.asana.com/-/login  и авторизоваться под
+                  логином  lunopark123@ukr.net, и паролем Lunopark123 и осуществить выход на главную
+                  страницу.
+                        Создать "Work Project" типа BOARD.
+        Steps:
+        1. Кликнуть на клавишу  «Work Project» на боковой панели меню.
+        2. Нажать на синюю кнопку "Add Columns" посередине внизу оккна.
+        3. В текстовое поле с подсказкой New Column ввести название новой колнки,
+           например: "First Goal" и нажать клавишу ввода.
+        4. Нажать на прямоугольную клавишу с плюсиком для добавления описания.
+        5. В текстовое поле ввести текст, например "Organizatioonal".
+
+        Expected result:
+                        В анкете "Work Project" появляется колонка с описанием и появляется новая ссылка
+                        "Show Project Description".
+
+
+        Test Case3
+
+        Summary:  Проверить функцию появления секции DESCRIPTION с текстом «Work at automation tests».
+        Precondition: Зайти на страницу  https://app.asana.com/-/login  и авторизоваться под
+                      логином  lunopark123@ukr.net, и паролем Lunopark123 и осуществить выход на главную страницу.
+                      Создать "Work Project" c описанием  «Work at automation tests» типа BOARD и колонку в нем.
+
+        Steps:
+        1. Кликнуть на клавишу  «Work Project» на боковой панели меню.
+        2. Кликнуть на ссылку  «Show Project Description» в левом верхнем углу страницы.
+
+        Expected result:
+                        Появляется секция DESCRIPTION с текстом «Work at automation tests».
+
+
+        Test Case4
+
+        Summary:  Проверить функцию удаления проекта.
+        Precondition: Зайти на страницу  https://app.asana.com/-/login  и авторизоваться под
+                      логином  lunopark123@ukr.net, и паролем Lunopark123 и осуществить выход на главную страницу.
+                      Создать проект, например "Work Project".
+
+        Steps:
+        1. Кликнуть на клавишу  «Work Project» на боковой панели меню.
+        2. Кликнуть на значок "v" справа от заголовка «Work Project» в верху страницы чтобы открылся список операций.
+        3. Кликнуть на операцию "Delete Project".
+        4. В появившемся диалоговом окне нажать на кнопку подтвержения удаления проекта "Delete Work Project"
+
+        Expected result:
+                        «Work Project» удаляется из боковой панели меню.
+
+
+
+
