@@ -56,6 +56,24 @@ public class MainPage extends ParentPage {
     @FindBy(xpath = ".//*[@id='confirm']")
     private WebElement confirmButton;
 
+    @FindBy(xpath = ".//*[@class='NavigationLink Topbar-myTasksButton is-selected']")
+    private WebElement myTaskButton;
+
+    @FindBy(xpath = ".//*[@class='Button Button--small Button--primary PotGridHeader-button PotGridHeader-addTaskButton']")
+    private WebElement addTaskButton;
+
+    @FindBy(xpath = ".//*[@class='simpleTextarea--dynamic simpleTextarea autogrowTextarea-input']")
+    private WebElement taskName;
+    @FindBy(xpath = ".//*[@class='TaskProjects-noProjectsLabel']")
+    private WebElement addToProjectButton;
+
+    @FindBy(xpath = ".//*[@class='TaskProjects-noProjectsLabel']")
+    private WebElement workProjectOption;
+    @FindBy(xpath = ".//div[@class='TypeaheadItemStructure-title']//span[contains(text(), 'Work Project')]")
+    private WebElement assignTaskToWorkProjectSpan;
+    @FindBy(xpath = ".//div[contains(@class, 'Pill--clickable Pill--colorNone Pill Pill--small') and text() = 'Work Project']")
+    private WebElement workProjectLabel;
+
 
     public MainPage(WebDriver webDriver) {
         super(webDriver, "/0/dashboard/661707260041680");
@@ -113,14 +131,6 @@ public class MainPage extends ParentPage {
         actionsWithOurElements.clickOnElement(deleteOption);
     }
 
-    public void selectDeleteOption(String text) {
-        actionsWithOurElements.selectValueInDD(deleteOption_S, text);
-    }
-
-    public void mouseOnDeleteOption() {
-        actionsWithOurElements.mouseOver(deleteOption);
-    }
-
     public void clickOnAddColumnsButton() {
         actionsWithOurElements.clickOnElement(addColumnsButton);
     }
@@ -151,5 +161,29 @@ public class MainPage extends ParentPage {
 
     public void clicOnConfirmButton() {
         actionsWithOurElements.clickOnElement(confirmButton);
+    }
+
+    public void clickOnMyTaskButton() {
+        actionsWithOurElements.clickOnElement(myTaskButton);
+    }
+
+    public void clickOnAddTaskButton() {
+        actionsWithOurElements.clickOnElement(addTaskButton);
+    }
+
+    public void enterTaskName(String text) {
+        actionsWithOurElements.enterTextIntoElement(taskName, text);
+    }
+
+    public void clicOnAddToProjectButton() {
+        actionsWithOurElements.clickOnElement(addToProjectButton);
+    }
+
+    public void selectAddTaskToWorkProject() {
+        actionsWithOurElements.clickOnElement(assignTaskToWorkProjectSpan);
+    }
+
+    public boolean isWorkProjectLabelPresent() {
+        return actionsWithOurElements.isElementPresent(workProjectLabel);
     }
 }

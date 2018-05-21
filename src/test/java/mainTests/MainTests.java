@@ -51,8 +51,22 @@ public class MainTests extends ParentTest {
         checkAC(" DESCRIPTION BOARD is not present", mainPage.isDescriptionBoardPresent(), true);
     }
 
-
     /*Test Case4
+    Summary:  Проверить функцию добавления задания к проекту.
+    */
+    @Test
+    public void checkAddTask() {
+        loginPage.userLogin("lunopark123@ukr.net", "Lunopark123");
+        mainPage.clickOnMyTaskButton();
+        mainPage.clickOnAddTaskButton();
+        mainPage.enterTaskName("Task new 1");
+        mainPage.clicOnAddToProjectButton();
+        mainPage.selectAddTaskToWorkProject();
+        checkAC("Task 1 is not assigned to Project", mainPage.isWorkProjectLabelPresent(), true);
+    }
+
+
+    /*Test Case5
     Summary:  Проверить функцию удаления проекта.
     */
     @Test
@@ -60,9 +74,7 @@ public class MainTests extends ParentTest {
         loginPage.userLogin("lunopark123@ukr.net", "Lunopark123");
         mainPage.clickOnProjectButton();
         mainPage.clickoOnProjectDDButton();
-        // mainPage.mouseOnDeleteOption();
-         mainPage.clickOnDeleteOption();
-       // mainPage.selectDeleteOption("Delete Project");
+        mainPage.clickOnDeleteOption();
         mainPage.clicOnConfirmButton();
     }
 }

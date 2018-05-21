@@ -19,9 +19,22 @@ MainPage.ShowProjectDescriptionLink.Button=xpath(".//*[@class='BoardBody-descrip
 
 MainPage.ProjectDD.DDButton=xpath(".//*[@class='PageHeaderStructure-titleRightElement']")
 
-MainPage.DeleteProject.DDOption=xpath(".//*[@class='menuItem-button is-highlighted menuItem--small
-ProjectDropdownMenuButton-deleteProjectButton']")
+
+MainPage.DeleteProject.DDOption=xpath(".//span[.='Delete Project']")
+
 
 MainPage.Description.Board=xpath(".//*[@class='ProjectOverviewSection-header']")
 
 MainPage.Confirm.Button=xpath(".//*[@id='confirm']")
+
+MainPage.MyTask.UpperMenueButton=xpath(".//*[@class='NavigationLink Topbar-myTasksButton is-selected']")
+
+MainPage.AddTask.Button=xpath(".//*[@class='Button Button--small Button--primary PotGridHeader-button PotGridHeader-addTaskButton']")
+
+MainPage.WriteTaskName.Textarea=xpath(".//*[@class='simpleTextarea--dynamic simpleTextarea autogrowTextarea-input']")
+
+MainPage.AddToProject.Button=xpath(".//*[@class='TaskProjects-noProjectsLabel']")
+
+MainPage.AssignTaskToWorkProjectSpan.DDMenu=xpath(".//div[@class='TypeaheadItemStructure-title']//span[contains(text(), 'Work Project')]")
+
+MainPage.WorkProject.Label=xpath(".//div[contains(@class, 'Pill--clickable Pill--colorNone Pill Pill--small') and text() = 'Work Project']")

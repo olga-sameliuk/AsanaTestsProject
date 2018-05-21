@@ -50,6 +50,7 @@ public class ParentTest {
         Assert.assertEquals(message, expected, actual);
 
     }
+
     @Rule
     public TestWatcher watchman = new TestWatcher() {
         String fileName;
@@ -73,6 +74,7 @@ public class ParentTest {
             saveScreenshot(((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES));
 
         }
+
         @Override
         protected void finished(Description description) {
             logger.info(String.format("Finished test: %s::%s", description.getClassName(), description.getMethodName()));

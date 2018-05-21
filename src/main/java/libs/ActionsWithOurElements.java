@@ -6,9 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
@@ -74,18 +72,4 @@ public class ActionsWithOurElements {
         }
     }
 
-    public void selectValueInDD(WebElement webElement, String text) {
-        try {
-            Select select = new Select(webElement);
-            select.selectByVisibleText(text);
-            logger.info(text + "was select in DD");
-        } catch (Exception e) {
-            printErrorAndStopTest(e);
-        }
-    }
-
-    public void mouseOver(WebElement element) {
-        Actions actions = new Actions(webDriver);
-        actions.moveToElement(element).build().perform();
-    }
 }
