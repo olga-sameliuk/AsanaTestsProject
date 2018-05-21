@@ -31,7 +31,7 @@ public class MainPage extends ParentPage {
     @FindBy(xpath = ".//*[@class='PageHeaderStructure-titleRightElement']")
     private WebElement projectDDButton;
 
-    @FindBy(xpath = ".//*[@class='menuItem-button is-highlighted menuItem--small ProjectDropdownMenuButton-deleteProjectButton']")
+    @FindBy(xpath = ".//span[.='Delete Project']")
     private WebElement deleteOption;
 
     @FindBy(xpath = ".//*[@class='menuItem-button is-highlighted menuItem--small ProjectDropdownMenuButton-deleteProjectButton']")

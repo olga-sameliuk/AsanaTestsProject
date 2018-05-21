@@ -61,8 +61,8 @@ public class MainTests extends ParentTest {
         mainPage.clickOnProjectButton();
         mainPage.clickoOnProjectDDButton();
         // mainPage.mouseOnDeleteOption();
-        // mainPage.clickOnDeleteOption();
-        mainPage.selectDeleteOption("Delete Project");
+         mainPage.clickOnDeleteOption();
+       // mainPage.selectDeleteOption("Delete Project");
         mainPage.clicOnConfirmButton();
     }
 }
